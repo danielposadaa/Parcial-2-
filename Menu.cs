@@ -10,11 +10,14 @@ namespace Parcial_2
     {
         static void Main(string[] args)
         {
-            int PrecioM = 3000;
-            int PrecioC = 4000;
-            int PrecioB = 400;
+            string[] Catalogo = { "Manzana", "Durazno", "Papaya", "Piña", "Banano", "Naranja", "Mandarina" };
+
+            int[] Precios = { 1100, 1000, 4500, 5000, 300, 500, 400 };
+            int PrecioM = 1100;
+            int PrecioC = 1000;
+            int PrecioB = 4500;
             int PrecioT = 500;
-            int PrecioW = 1000;
+            int PrecioW = 4000;
             int sum = 0;
             int cant = 0;
             int importe = 0;
@@ -27,6 +30,15 @@ namespace Parcial_2
             int opcion = 0;
             int fiar = 0;
             int cliente = 0;
+            int Manzana = 1100;
+            int Durazno = 1000;
+            int Papaya = 4500;
+            int Piña = 5000;
+            int Banano = 300;
+            int Naranja = 500;
+            int Mandarina = 400;
+            bool DetallesProducto = false;
+
             // do-while permite repetir una instrucción o una instrucción compuesta hasta que una expresión especificada sea false;
             do
             {
@@ -49,6 +61,29 @@ namespace Parcial_2
                         Console.WriteLine("Daniel Santiago Posada Arana");
                         break;
                     case 2:
+                        Console.WriteLine("Ingrese el nombre del producto");
+                        string Item = Console.ReadLine();
+                        for (int i = 0; i < Catalogo.Length; i++)
+                        {
+                            if (Catalogo[i].Equals(Item))
+                            {
+                                DetallesProducto = true;
+                                Console.WriteLine("El producto " + Catalogo[i] + " Tiene un valor de: " + Precios[i]);
+
+
+                            }
+                            else if (!DetallesProducto)
+                            {
+                                DetallesProducto = false;
+                            }
+
+                        }
+
+                        if (!ProductoEncontrado)
+                        {
+                            Console.WriteLine("El producto que ingreso no existe");
+                        }
+
                         break;
                     case 3:
                         Console.WriteLine("\n\nProducto1");
