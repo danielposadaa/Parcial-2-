@@ -199,7 +199,7 @@ namespace Parcial_2
 
                     case 6:
                         Console.WriteLine("\n" +
-                            "\n Este trabajo fue realizado por: "
+                            "\n Este trabajo fue realizado por: " +
                             "\n 1. Daniel Santiago Posada Arana" +
                             "\n 2.  Juan Esteban Suárez Restrepo" +
                             "\n 3.- Sara Marcela Posada Rendón \n"); 
