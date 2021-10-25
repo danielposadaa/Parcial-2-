@@ -37,8 +37,9 @@ namespace Parcial_2
                     "\n 2.  Buscar productos" +
                     "\n 3.- Productos a Comprar" +
                     "\n 4.- Pagar cuenta" +
-                    "\n 5.- Creditos" +
-                    "\n 6.- Salir \n");
+                    "\n 5.- Inventario" +
+                    "\n 6.- Creditos" +
+                    "\n 7.- Salir \n");
                 Console.WriteLine("Digite una opción :");
                 // Convert.ToInt32=toca convertir la informacion digitada por el usuario a dato numerico para que pueda ser almacenada en la variable opcion
                 opcion = Convert.ToInt32(Console.ReadLine());
@@ -186,7 +187,17 @@ namespace Parcial_2
                             Console.WriteLine("\n\n\t El total de dinero que debe es de : {0}", fiar);
                         }
                         break;
+
                     case 5:
+                        Console.WriteLine("El inventario final de Manzana es: " + Manzana);
+                        Console.WriteLine("El inventario final de Durazno es: " + Durazno);
+                        Console.WriteLine("El inventario final de Papaya es: " + Papaya;
+                        Console.WriteLine("El inventario final de Piña es: " + Piña);
+                        Console.WriteLine("El inventario final de Banano es: " + Banano);
+                        Console.WriteLine("El inventario final de Naranja es: " + Naranja);
+                        Console.WriteLine("El inventario final de Mandarina es: " + Mandarina);
+
+                    case 6:
                         Console.WriteLine("\n" +
                             "\n Este trabajo fue realizado por: "
                             "\n 1. Daniel Santiago Posada Arana" +
@@ -194,7 +205,7 @@ namespace Parcial_2
                             "\n 3.- Sara Marcela Posada Rendón \n"); 
                         break;
 
-                    case 6:
+                    case 7:
                         Console.WriteLine("Saliendo de la aplicacion");
                         break;
                     default:
