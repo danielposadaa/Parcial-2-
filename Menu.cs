@@ -30,14 +30,9 @@ namespace Parcial_2
             int opcion = 0;
             int fiar = 0;
             int cliente = 0;
-            int Manzana = 1100;
-            int Durazno = 1000;
-            int Papaya = 4500;
-            int Piña = 5000;
-            int Banano = 300;
-            int Naranja = 500;
-            int Mandarina = 400;
+
             bool DetallesProducto = false;
+            bool ProductoEncontrado = false;
 
             // do-while permite repetir una instrucción o una instrucción compuesta hasta que una expresión especificada sea false;
             do
@@ -74,15 +69,12 @@ namespace Parcial_2
                             }
                             else if (!DetallesProducto)
                             {
-                                DetallesProducto = false;
+                                Console.WriteLine("El producto que ingreso no existe");
                             }
 
                         }
 
-                        if (!ProductoEncontrado)
-                        {
-                            Console.WriteLine("El producto que ingreso no existe");
-                        }
+
 
                         break;
                     case 3:
@@ -224,6 +216,7 @@ namespace Parcial_2
                         break;
 
                     case 5:
+
                         break;
 
                     case 6:
@@ -231,7 +224,7 @@ namespace Parcial_2
                             "\n Este trabajo fue realizado por: " +
                             "\n 1. Daniel Santiago Posada Arana" +
                             "\n 2.  Juan Esteban Suárez Restrepo" +
-                            "\n 3.- Sara Marcela Posada Rendón \n"); 
+                            "\n 3.- Sara Marcela Posada Rendón \n");
                         break;
 
                     case 7:
