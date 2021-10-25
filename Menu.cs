@@ -172,7 +172,7 @@ namespace Parcial_2
                         cliente = Convert.ToInt32(Console.ReadLine());
                         //devuelta =- sum;
                         //en caso de pagar
-                        if (cliente = 1)
+                        if (cliente == 1)
                         {
                             Console.WriteLine("\n\n\t Ha pagado un total de : {0}", sum);
                         }
