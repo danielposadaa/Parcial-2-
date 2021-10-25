@@ -189,13 +189,7 @@ namespace Parcial_2
                         break;
 
                     case 5:
-                        Console.WriteLine("El inventario final de Manzana es: " + Manzana);
-                        Console.WriteLine("El inventario final de Durazno es: " + Durazno);
-                        Console.WriteLine("El inventario final de Papaya es: " + Papaya;
-                        Console.WriteLine("El inventario final de Piña es: " + Piña);
-                        Console.WriteLine("El inventario final de Banano es: " + Banano);
-                        Console.WriteLine("El inventario final de Naranja es: " + Naranja);
-                        Console.WriteLine("El inventario final de Mandarina es: " + Mandarina);
+                        break;
 
                     case 6:
                         Console.WriteLine("\n" +
