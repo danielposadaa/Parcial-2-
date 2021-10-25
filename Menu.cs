@@ -34,9 +34,11 @@ namespace Parcial_2
                 Console.WriteLine("MENU DE OPCIONES");
                 Console.WriteLine("\n" +
                     "\n 1.- Nombre" +
-                    "\n 2.- Productos a Comprar" +
-                    "\n 3.- Pagar cuenta" +
-                    "\n 4.- Salir \n");
+                    "\n 2.  Buscar productos" +
+                    "\n 3.- Productos a Comprar" +
+                    "\n 4.- Pagar cuenta" +
+                    "\n 5.- Creditos" +
+                    "\n 6.- Salir \n");
                 Console.WriteLine("Digite una opción :");
                 // Convert.ToInt32=toca convertir la informacion digitada por el usuario a dato numerico para que pueda ser almacenada en la variable opcion
                 opcion = Convert.ToInt32(Console.ReadLine());
@@ -46,6 +48,8 @@ namespace Parcial_2
                         Console.WriteLine("Daniel Santiago Posada Arana");
                         break;
                     case 2:
+                        break;
+                    case 3:
                         Console.WriteLine("\n\nProducto1");
                         Console.WriteLine("\nManzana :  ");
                         //art1 = Int32.Parse(Console.ReadLine());
@@ -165,7 +169,7 @@ namespace Parcial_2
                         Console.ReadKey();
                         break;
 
-                    case 3:
+                    case 4:
                         Console.WriteLine("Pagar cuenta");
                         Console.WriteLine("1.- Pagar");
                         Console.WriteLine("2.- Fiar");
@@ -182,8 +186,10 @@ namespace Parcial_2
                             Console.WriteLine("\n\n\t El total de dinero que debe es de : {0}", fiar);
                         }
                         break;
+                    case 5:
+                        break;
 
-                    case 4:
+                    case 6:
                         Console.WriteLine("Saliendo de la aplicacion");
                         break;
                     default:
